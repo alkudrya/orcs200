@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>orcs 200</title>
+    <link rel="icon" type="image/x-icon" href="./icon.png" />
+  </head>
+  <body>
+    <div id="picture-wrapper" data-id="picture">
+      <div class="container soldiers" data-type="soldiers"></div>
+      <div class="container tanks" data-type="tanks"></div>
+      <div class="container BBM" data-type="BBM"></div>
+      <div class="container aircraft" data-type="aircraft"></div>
+      <div class="container automobiles" data-type="automobiles"></div>
+      <div class="container helicopters" data-type="helicopters"></div>
+      <div class="container artillery" data-type="artillery"></div>
+      <div class="last-row">
+        <div class="field-name">
+          <div class="container airDefence" data-type="airDefence"></div>
+        </div>
+        <div class="field-name">
+          <div class="container fuelTanks" data-type="fuelTanks"></div>
+        </div>
+        <div class="field-name">
+          <div class="container rszv" data-type="rszv"></div>
+        </div>
+      </div>
+    </div>
+    <div id="input-wrapper">
+      <div class="type-wrapper">
+        <label for="amount">Air Defence not so defencive anymore:</label>
+        <input type="number" id="airDefence" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Aircrafts which don't fly: </label>
+        <input type="number" id="aircraft" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Artillery of failure:</label>
+        <input type="number" id="artillery" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Automobiles for zombies:</label>
+        <input type="number" id="automobiles" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">BBM to hell:</label>
+        <input type="number" id="BBM" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Fuel tanks exploaded:</label>
+        <input type="number" id="fuelTanks" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Helicopters but busted:</label>
+        <input type="number" id="helicopters" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">RSZV to putin's ass:</label>
+        <input type="number" id="rszv" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Soldiers but good:</label>
+        <input type="number" id="soldiers" name="amount" />
+      </div>
+      <div class="type-wrapper">
+        <label for="amount">Tanks but in world of the dead:</label>
+        <input type="number" id="tanks" name="amount" />
+      </div>
+      <button id="generate-button">Generate</button>
+      <button id="download-button">Print</button>
+    </div>
+    <script src="./app.js" charset="utf-8"></script>
+  </body>
+</html>
