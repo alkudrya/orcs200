@@ -153,6 +153,9 @@ function selectRandom(array) {
 function defineNumberofFields(amount, type) {
   if (picsPaths.hasOwnProperty(type)) {
     const maxNumber = picsPaths[type].items;
+    if (type == "soldiers") {
+      amount = Math.floor(amount / 10);
+    }
     if (amount <= maxNumber) {
       populate(amount, type, picsPaths[type].picture);
     } else if ((amount / maxNumber) % 1 == 0) {
